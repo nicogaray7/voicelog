@@ -5,36 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="VoiceLog — dictate visit notes after meetings. HubSpot & Pipedrive stay updated, even offline. Request early access for your field sales team."
+      id="meta-desc"
+      content="VoiceLog — voice to CRM for field sales. HubSpot & Pipedrive, offline-first. Request early access."
     />
-    <title>VoiceLog — Early access for field sales teams</title>
-    <!-- Replace href with your production URL (custom domain or *.vercel.app) -->
+    <title id="doc-title">VoiceLog — Early access</title>
     <link rel="canonical" href="https://voicelog-one.vercel.app/" />
+    <link rel="alternate" hreflang="en" href="https://voicelog-one.vercel.app/?lang=en" />
+    <link rel="alternate" hreflang="es" href="https://voicelog-one.vercel.app/?lang=es" />
+    <link rel="alternate" hreflang="fr" href="https://voicelog-one.vercel.app/?lang=fr" />
+    <link rel="alternate" hreflang="x-default" href="https://voicelog-one.vercel.app/" />
 
-    <!-- Open Graph / LinkedIn / Slack previews -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://voicelog-one.vercel.app/" />
-    <meta
-      property="og:title"
-      content="VoiceLog — CRM notes from your voice"
-    />
+    <meta property="og:title" content="VoiceLog — CRM notes from your voice" />
     <meta
       property="og:description"
-      content="One tap after the meeting. Transcribed, structured, synced to HubSpot or Pipedrive — offline-first for reps on the road."
+      content="One tap after the meeting. Syncs to HubSpot or Pipedrive — works offline."
     />
     <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="es_ES" />
+    <meta property="og:locale:alternate" content="fr_FR" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="VoiceLog — CRM notes from your voice" />
     <meta
       name="twitter:description"
-      content="Early access for B2B field sales. Less typing, cleaner CRM, works offline."
+      content="Early access for B2B field sales. Less typing, cleaner CRM."
     />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,600&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,600&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -47,64 +49,76 @@
         "offers": {
           "@type": "Offer",
           "price": "0",
-          "priceCurrency": "EUR",
+          "priceCurrency": "USD",
           "description": "Early access waitlist"
         },
-        "description": "Mobile voice-to-CRM visit reports for B2B field sales. Syncs to HubSpot and Pipedrive with offline-first queue."
+        "description": "Voice-to-CRM visit notes for B2B field sales. HubSpot and Pipedrive, offline-first."
       }
     </script>
   </head>
   <body>
-    <a class="skip-link" href="#access">Skip to request form</a>
+    <a class="skip-link" href="#access" data-i18n="skip_link">Skip to form</a>
 
     <header class="nav">
-      <span class="logo" aria-hidden="true">◉</span>
-      <span class="logo-text">VoiceLog</span>
-      <a class="nav-cta" href="#access">Get early access</a>
+      <div class="nav-brand">
+        <span class="logo" aria-hidden="true">VL</span>
+        <span class="logo-text">VoiceLog</span>
+      </div>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" class="lang-btn" data-lang="es" aria-pressed="false">ES</button>
+        <button type="button" class="lang-btn" data-lang="fr" aria-pressed="false">FR</button>
+      </div>
+      <span class="nav-spacer" aria-hidden="true"></span>
+      <a class="nav-cta" href="#access" data-i18n="nav_cta">Get early access</a>
     </header>
 
     <main>
       <section class="hero">
-        <p class="eyebrow">Early access · B2B field sales</p>
-        <h1>Your CRM, updated before you get back to the car.</h1>
-        <p class="lede">
+        <p class="eyebrow" data-i18n="eyebrow">Early access · Field sales</p>
+        <h1 data-i18n="h1">Your CRM, updated before you drive away.</h1>
+        <p class="lede" data-i18n-html="lede">
           One tap after each visit: VoiceLog turns your voice into a structured
           note and syncs to <strong>HubSpot</strong> or
           <strong>Pipedrive</strong>—even offline.
         </p>
         <p class="hero-cta-row">
-          <a class="btn btn-primary hero-cta-btn" href="#access"
-            >Request early access</a
-          >
+          <a class="hero-cta-btn" href="#access" data-i18n="hero_cta">Request early access</a>
         </p>
         <ul class="hero-stats" role="list">
-          <li><span class="stat">~30 min</span> saved per rep / day</li>
-          <li><span class="stat">Offline-first</span> queue</li>
-          <li><span class="stat">GDPR-minded</span> consent</li>
+          <li>
+            <span class="stat" data-i18n="stat1">~30 min</span>
+            <span data-i18n="stat1_sub">saved per rep / day</span>
+          </li>
+          <li>
+            <span class="stat" data-i18n="stat2">Offline-first</span>
+            <span data-i18n="stat2_sub">queue</span>
+          </li>
+          <li>
+            <span class="stat" data-i18n="stat3">Privacy-first</span>
+            <span data-i18n="stat3_sub">consent</span>
+          </li>
         </ul>
-        <p class="trust-strip">
-          Built for reps doing <strong>4–8 meetings a day</strong> in tech &
-          SaaS SMEs (50–200 people).
+        <p class="trust-strip" data-i18n-html="trust">
+          Built for reps with
+          <strong>4–8 meetings a day</strong> at tech &amp; SaaS SMBs (about
+          50–200 people).
         </p>
       </section>
 
-      <section
-        class="panel"
-        id="access"
-        aria-labelledby="interest-heading"
-      >
+      <section class="panel" id="access" aria-labelledby="interest-heading">
         <div id="form-block">
-          <h2 id="interest-heading">Request early access</h2>
-          <p class="panel-copy">
+          <h2 id="interest-heading" data-i18n="form_title">Request early access</h2>
+          <p class="panel-copy" data-i18n-html="form_copy">
             Leave your work email. We’ll send a
-            <strong>short confirmation</strong> and get back to you when we open
-            the next cohort—no spam.
+            <strong>short confirmation</strong> and follow up when the next
+            cohort opens—no spam.
           </p>
 
           <form class="signup" id="signup-form" novalidate>
             <div class="fields">
               <div class="field">
-                <label for="email">Work email</label>
+                <label for="email" data-i18n="label_email">Work email</label>
                 <input
                   id="email"
                   name="email"
@@ -116,25 +130,32 @@
                 />
               </div>
               <div class="field field-optional">
-                <label for="company">Company <span>(optional)</span></label>
+                <label for="company">
+                  <span data-i18n="label_company">Company</span>
+                  <span data-i18n="label_opt">(optional)</span>
+                </label>
                 <input
                   id="company"
                   name="company"
                   type="text"
                   autocomplete="organization"
-                  placeholder="Acme SaaS"
+                  data-i18n-placeholder="ph_company"
+                  placeholder="Acme Inc."
                 />
               </div>
             </div>
             <button type="submit" class="btn btn-primary" id="submit-btn">
-              <span class="btn-label">Request access</span>
-              <span class="btn-loading" aria-hidden="true">Sending…</span>
+              <span class="btn-label" data-i18n="btn_submit">Request access</span>
+              <span class="btn-loading" data-i18n="btn_loading" aria-hidden="true">Sending…</span>
             </button>
           </form>
           <p class="form-hint" id="form-feedback" aria-live="polite"></p>
-          <p class="fineprint">
-            By requesting access, you agree we may email you about VoiceLog. You
-            can unsubscribe anytime.
+          <p
+            class="fineprint"
+            data-i18n-html="fineprint"
+          >
+            By requesting access, you agree we may email you about VoiceLog.
+            Unsubscribe anytime.
             <a href="#privacy">Privacy</a>
           </p>
         </div>
@@ -146,36 +167,35 @@
           aria-labelledby="success-title"
         >
           <div class="success-icon" aria-hidden="true">✓</div>
-          <h2 id="success-title">You’re on the list</h2>
-          <p class="success-copy">
+          <h2 id="success-title" data-i18n="success_title">You're on the list</h2>
+          <p class="success-copy" data-i18n-html="success_copy">
             <strong>Check your inbox</strong> for a confirmation email. We’ll
-            reach out again after launch with next steps for your team.
+            reach out again after launch with next steps.
           </p>
-          <p class="success-muted">
-            Didn’t get it? Check spam, or email us from the same address you used
-            above.
+          <p class="success-muted" data-i18n="success_muted">
+            Nothing there? Check spam, or email us from the same address you
+            used above.
           </p>
         </div>
       </section>
 
       <section class="grid-2" aria-labelledby="why-heading">
         <div>
-          <h2 id="why-heading">Why teams care</h2>
-          <p>
-            CRM updates slip after long days in the field. Managers lose
-            visibility; follow-ups stall. VoiceLog removes the
+          <h2 id="why-heading" data-i18n="why_title">Why teams care</h2>
+          <p data-i18n-html="why_p">
+            CRM updates slip after long days in the field. VoiceLog cuts the
             <strong>typing tax</strong> while the meeting is still fresh.
           </p>
         </div>
         <ul class="checklist">
-          <li>
+          <li data-i18n-html="check_1">
             <strong>1-tap capture</strong> — record right after the handshake.
           </li>
-          <li>
-            <strong>Background processing</strong> — transcribe &amp; structure
-            while you drive.
+          <li data-i18n-html="check_2">
+            <strong>Background processing</strong> — transcribe and structure
+            while you move.
           </li>
-          <li>
+          <li data-i18n-html="check_3">
             <strong>Pre-meeting briefing</strong> — CRM context before the next
             visit <span class="tag">Growth</span>
           </li>
@@ -183,51 +203,333 @@
       </section>
 
       <section class="pricing-teaser" aria-labelledby="pricing-heading">
-        <h2 id="pricing-heading">Planned pricing (indicative)</h2>
+        <h2 id="pricing-heading" data-i18n="pricing_title">Planned pricing (USD)</h2>
         <div class="price-cards">
           <article class="price-card">
-            <h3>Starter</h3>
-            <p class="price">€29<span>/seat/mo</span></p>
-            <p>1–10 users · 50 reports/mo</p>
+            <h3 data-i18n="tier_starter">Starter</h3>
+            <p class="price" data-i18n-html="price_starter">
+              $29<span>/seat/mo</span>
+            </p>
+            <p data-i18n="detail_starter">1–10 seats · 50 reports/mo</p>
           </article>
           <article class="price-card featured">
-            <h3>Growth</h3>
-            <p class="price">€49<span>/seat/mo</span></p>
-            <p>11–50 users · unlimited · briefing</p>
+            <h3 data-i18n="tier_growth">Growth</h3>
+            <p class="price" data-i18n-html="price_growth">
+              $49<span>/seat/mo</span>
+            </p>
+            <p data-i18n="detail_growth">11–50 seats · unlimited · briefing</p>
           </article>
           <article class="price-card">
-            <h3>Scale</h3>
-            <p class="price">Custom</p>
-            <p>50+ · SSO · Salesforce path</p>
+            <h3 data-i18n="tier_scale">Scale</h3>
+            <p class="price" data-i18n="price_scale">Custom</p>
+            <p data-i18n="detail_scale">50+ · SSO · Salesforce</p>
           </article>
         </div>
-        <p class="annual">~20% off on annual billing (planned).</p>
+        <p class="annual" data-i18n="annual">~20% off annual billing (planned).</p>
       </section>
 
       <section class="privacy-block" id="privacy" aria-labelledby="privacy-heading">
-        <h2 id="privacy-heading">Privacy</h2>
-        <p>
-          We use your email only to contact you about early access and VoiceLog.
-          Audio is recorded only with explicit in-app consent; we don’t listen
-          live. For GDPR requests, contact us at the address you configure for
-          this page (see script below).
+        <h2 id="privacy-heading" data-i18n="privacy_title">Privacy</h2>
+        <p data-i18n="privacy_p">
+          We use your email only for VoiceLog and early access. In-app audio
+          requires explicit consent; we don’t listen live. GDPR requests: use
+          the contact you configure on this site.
         </p>
       </section>
     </main>
 
     <footer class="footer">
-      <p><strong>VoiceLog</strong> — voice → structured CRM notes.</p>
-      <p class="footer-note">
-        Product in development. AI: fast transcription + structured output. CRM
-        tokens encrypted at rest when cloud sync is on.
+      <p><strong>VoiceLog</strong> — <span data-i18n="footer_tag">voice → CRM notes.</span></p>
+      <p class="footer-note" data-i18n="footer_note">
+        In development. Fast transcription + structured output. CRM tokens
+        encrypted at rest when cloud sync is on.
       </p>
     </footer>
 
     <script>
       (function () {
+        var T = {
+          en: {
+            meta_title: "VoiceLog — Early access",
+            meta_desc:
+              "VoiceLog — voice to CRM for field sales. HubSpot & Pipedrive, offline-first. Request early access.",
+            skip_link: "Skip to form",
+            nav_cta: "Get early access",
+            eyebrow: "Early access · Field sales",
+            h1: "Your CRM, updated before you drive away.",
+            lede:
+              "One tap after each visit: VoiceLog turns your voice into a structured note and syncs to <strong>HubSpot</strong> or <strong>Pipedrive</strong>—even offline.",
+            hero_cta: "Request early access",
+            stat1: "~30 min",
+            stat1_sub: "saved per rep / day",
+            stat2: "Offline-first",
+            stat2_sub: "queue",
+            stat3: "Privacy-first",
+            stat3_sub: "consent",
+            trust:
+              "Built for reps with <strong>4–8 meetings a day</strong> at tech &amp; SaaS SMBs (about 50–200 people).",
+            form_title: "Request early access",
+            form_copy:
+              "Leave your work email. We’ll send a <strong>short confirmation</strong> and follow up when the next cohort opens—no spam.",
+            label_email: "Work email",
+            label_company: "Company ",
+            label_opt: "(optional)",
+            ph_company: "Acme Inc.",
+            btn_submit: "Request access",
+            btn_loading: "Sending…",
+            fineprint:
+              'By requesting access, you agree we may email you about VoiceLog. Unsubscribe anytime. <a href="#privacy">Privacy</a>',
+            success_title: "You’re on the list",
+            success_copy:
+              "<strong>Check your inbox</strong> for a confirmation email. We’ll reach out again after launch with next steps.",
+            success_muted:
+              "Nothing there? Check spam, or email us from the same address you used above.",
+            why_title: "Why teams care",
+            why_p:
+              "CRM updates slip after long days in the field. VoiceLog cuts the <strong>typing tax</strong> while the meeting is still fresh.",
+            check_1:
+              "<strong>1-tap capture</strong> — record right after the handshake.",
+            check_2:
+              "<strong>Background processing</strong> — transcribe and structure while you move.",
+            check_3:
+              "<strong>Pre-meeting briefing</strong> — CRM context before the next visit <span class=\"tag\">Growth</span>",
+            pricing_title: "Planned pricing (USD)",
+            tier_starter: "Starter",
+            tier_growth: "Growth",
+            tier_scale: "Scale",
+            price_starter: '$29<span>/seat/mo</span>',
+            price_growth: '$49<span>/seat/mo</span>',
+            price_scale: "Custom",
+            detail_starter: "1–10 seats · 50 reports/mo",
+            detail_growth: "11–50 seats · unlimited · briefing",
+            detail_scale: "50+ · SSO · Salesforce",
+            annual: "~20% off annual billing (planned).",
+            privacy_title: "Privacy",
+            privacy_p:
+              "We use your email only for VoiceLog and early access. In-app audio requires explicit consent; we don’t listen live. GDPR requests: use the contact you configure on this site.",
+            footer_tag: "voice → CRM notes.",
+            footer_note:
+              "In development. Fast transcription + structured output. CRM tokens encrypted at rest when cloud sync is on.",
+            err_email: "Please enter a valid work email.",
+            err_submit: "Something went wrong. Try again or email us.",
+            err_network: "Network error. Try again.",
+            mailto_pending: "Opening your email app… Send the message to finish.",
+            form_subject: "VoiceLog — early access",
+            form_body_intro: "Please add me to the VoiceLog early access list.",
+          },
+          es: {
+            meta_title: "VoiceLog — Acceso anticipado",
+            meta_desc:
+              "VoiceLog — voz al CRM para ventas de campo. HubSpot y Pipedrive, primero sin conexión. Solicita acceso.",
+            skip_link: "Ir al formulario",
+            nav_cta: "Solicitar acceso",
+            eyebrow: "Acceso anticipado · Ventas de campo",
+            h1: "Tu CRM, actualizado antes de irte.",
+            lede:
+              "Un toque tras cada visita: VoiceLog convierte tu voz en una nota estructurada y sincroniza con <strong>HubSpot</strong> o <strong>Pipedrive</strong>—incluso sin conexión.",
+            hero_cta: "Solicitar acceso anticipado",
+            stat1: "~30 min",
+            stat1_sub: "ahorrados por vendedor / día",
+            stat2: "Sin conexión",
+            stat2_sub: "cola local",
+            stat3: "Privacidad",
+            stat3_sub: "consentimiento",
+            trust:
+              "Para equipos con <strong>4–8 reuniones al día</strong> en pymes tech y SaaS (unos 50–200 personas).",
+            form_title: "Solicitar acceso",
+            form_copy:
+              "Deja tu email laboral. Te enviaremos una <strong>breve confirmación</strong> y te contactaremos al abrir la siguiente cohorte—sin spam.",
+            label_email: "Email laboral",
+            label_company: "Empresa ",
+            label_opt: "(opcional)",
+            ph_company: "Acme S.L.",
+            btn_submit: "Enviar solicitud",
+            btn_loading: "Enviando…",
+            fineprint:
+              'Al solicitar acceso, aceptas recibir emails sobre VoiceLog. Baja cuando quieras. <a href="#privacy">Privacidad</a>',
+            success_title: "Estás en la lista",
+            success_copy:
+              "<strong>Revisa tu bandeja</strong> para el email de confirmación. Te escribiremos tras el lanzamiento con los siguientes pasos.",
+            success_muted:
+              "¿No llega? Revisa spam o escríbenos desde el mismo email.",
+            why_title: "Por qué importa",
+            why_p:
+              "El CRM se queda atrás tras días de campo. VoiceLog quita el <strong>impuesto del teclado</strong> con la reunión reciente.",
+            check_1:
+              "<strong>1 toque</strong> — graba justo después del saludo.",
+            check_2:
+              "<strong>Proceso en segundo plano</strong> — transcribe y estructura mientras sigues.",
+            check_3:
+              "<strong>Briefing pre-reunión</strong> — contexto del CRM antes de la visita <span class=\"tag\">Growth</span>",
+            pricing_title: "Precios previstos (USD)",
+            tier_starter: "Inicial",
+            tier_growth: "Crecimiento",
+            tier_scale: "Escala",
+            price_starter: '$29<span>/usuario/mes</span>',
+            price_growth: '$49<span>/usuario/mes</span>',
+            price_scale: "A medida",
+            detail_starter: "1–10 usuarios · 50 informes/mes",
+            detail_growth: "11–50 · ilimitado · briefing",
+            detail_scale: "50+ · SSO · Salesforce",
+            annual: "~20% de descuento en facturación anual (previsto).",
+            privacy_title: "Privacidad",
+            privacy_p:
+              "Usamos tu email solo para VoiceLog y el acceso anticipado. El audio en la app requiere consentimiento explícito; no escuchamos en vivo. GDPR: contacto configurado en esta página.",
+            footer_tag: "voz → notas CRM.",
+            footer_note:
+              "En desarrollo. Transcripción rápida + salida estructurada. Tokens CRM cifrados en reposo con sync en la nube.",
+            err_email: "Introduce un email laboral válido.",
+            err_submit: "Error. Reintenta o escríbenos.",
+            err_network: "Error de red. Reintenta.",
+            mailto_pending: "Abriendo tu correo… Envía el mensaje para terminar.",
+            form_subject: "VoiceLog — acceso anticipado",
+            form_body_intro: "Añádeme a la lista de acceso anticipado de VoiceLog.",
+          },
+          fr: {
+            meta_title: "VoiceLog — Accès anticipé",
+            meta_desc:
+              "VoiceLog — voix vers CRM pour commerciaux terrain. HubSpot et Pipedrive, hors-ligne d’abord. Demandez l’accès.",
+            skip_link: "Aller au formulaire",
+            nav_cta: "Demander l’accès",
+            eyebrow: "Accès anticipé · Terrain",
+            h1: "Votre CRM à jour avant de repartir.",
+            lede:
+              "Un geste après chaque rendez-vous : VoiceLog transforme votre voix en note structurée et synchronise <strong>HubSpot</strong> ou <strong>Pipedrive</strong>—même hors ligne.",
+            hero_cta: "Demander un accès anticipé",
+            stat1: "~30 min",
+            stat1_sub: "gagnés / commercial / jour",
+            stat2: "Hors-ligne",
+            stat2_sub: "file locale",
+            stat3: "Confidentialité",
+            stat3_sub: "consentement",
+            trust:
+              "Pour les équipes avec <strong>4–8 rendez-vous par jour</strong> dans des PME tech &amp; SaaS (environ 50–200 personnes).",
+            form_title: "Demander l’accès",
+            form_copy:
+              "Laissez votre email pro. Nous envoyons une <strong>courte confirmation</strong> et revenons vers vous à l’ouverture de la prochaine cohorte—pas de spam.",
+            label_email: "Email professionnel",
+            label_company: "Entreprise ",
+            label_opt: "(optionnel)",
+            ph_company: "Acme SAS",
+            btn_submit: "Envoyer la demande",
+            btn_loading: "Envoi…",
+            fineprint:
+              'En demandant l’accès, vous acceptez des emails sur VoiceLog. Désinscription à tout moment. <a href="#privacy">Confidentialité</a>',
+            success_title: "Vous êtes sur la liste",
+            success_copy:
+              "<strong>Vérifiez votre boîte mail</strong> pour la confirmation. Nous recontacterons après le lancement pour la suite.",
+            success_muted:
+              "Rien reçu ? Vérifiez les indésirables ou écrivez-nous depuis la même adresse.",
+            why_title: "Pourquoi c’est utile",
+            why_p:
+              "Le CRM dérape après des journées terrain. VoiceLog enlève la <strong>taxe du clavier</strong> tant que c’est frais.",
+            check_1:
+              "<strong>1 geste</strong> — enregistrez juste après la poignée de main.",
+            check_2:
+              "<strong>Traitement en arrière-plan</strong> — transcription et structuration en déplacement.",
+            check_3:
+              "<strong>Brief avant rendez-vous</strong> — contexte CRM avant la visite <span class=\"tag\">Growth</span>",
+            pricing_title: "Tarifs envisagés (USD)",
+            tier_starter: "Starter",
+            tier_growth: "Croissance",
+            tier_scale: "Scale",
+            price_starter: '$29<span>/siège/mois</span>',
+            price_growth: '$49<span>/siège/mois</span>',
+            price_scale: "Sur mesure",
+            detail_starter: "1–10 sièges · 50 rapports/mois",
+            detail_growth: "11–50 · illimité · briefing",
+            detail_scale: "50+ · SSO · Salesforce",
+            annual: "~20 % de réduction en annuel (prévu).",
+            privacy_title: "Confidentialité",
+            privacy_p:
+              "Nous utilisons votre email uniquement pour VoiceLog et l’accès anticipé. L’audio dans l’app nécessite un consentement explicite ; pas d’écoute en direct. RGPD : contact configuré sur ce site.",
+            footer_tag: "voix → notes CRM.",
+            footer_note:
+              "En développement. Transcription rapide + sortie structurée. Jetons CRM chiffrés au repos si sync cloud activée.",
+            err_email: "Indiquez un email professionnel valide.",
+            err_submit: "Une erreur s’est produite. Réessayez ou écrivez-nous.",
+            err_network: "Erreur réseau. Réessayez.",
+            mailto_pending: "Ouverture du client mail… Envoyez le message pour terminer.",
+            form_subject: "VoiceLog — accès anticipé",
+            form_body_intro: "Ajoutez-moi à la liste d’accès anticipé VoiceLog.",
+          },
+        };
+
         var CONTACT_EMAIL = "you@company.com";
-        /** Formspree: https://formspree.io — enable “Autoresponse” in the form settings for instant confirmation emails. */
         var FORMSPREE_ENDPOINT = "";
+
+        var LANG_KEY = "voicelog-lang";
+        var supported = ["en", "es", "fr"];
+
+        function normalizeLang(code) {
+          if (!code) return "en";
+          var c = String(code).toLowerCase().slice(0, 2);
+          return supported.indexOf(c) !== -1 ? c : "en";
+        }
+
+        function getInitialLang() {
+          var q = new URLSearchParams(window.location.search).get("lang");
+          if (q) return normalizeLang(q);
+          try {
+            var s = localStorage.getItem(LANG_KEY);
+            if (s) return normalizeLang(s);
+          } catch (e) {}
+          return normalizeLang(
+            (navigator.language || navigator.userLanguage || "en").slice(0, 2)
+          );
+        }
+
+        function applyLocale(lang) {
+          lang = normalizeLang(lang);
+          var pack = T[lang];
+          if (!pack) return;
+
+          document.documentElement.lang =
+            lang === "en" ? "en" : lang === "es" ? "es" : "fr";
+
+          var titleEl = document.getElementById("doc-title");
+          if (titleEl) titleEl.textContent = pack.meta_title;
+          var descEl = document.getElementById("meta-desc");
+          if (descEl) descEl.setAttribute("content", pack.meta_desc);
+
+          document.querySelectorAll("[data-i18n]").forEach(function (el) {
+            var k = el.getAttribute("data-i18n");
+            if (k && pack[k] !== undefined) el.textContent = pack[k];
+          });
+
+          document.querySelectorAll("[data-i18n-html]").forEach(function (el) {
+            var k = el.getAttribute("data-i18n-html");
+            if (k && pack[k] !== undefined) el.innerHTML = pack[k];
+          });
+
+          document.querySelectorAll("[data-i18n-placeholder]").forEach(function (el) {
+            var k = el.getAttribute("data-i18n-placeholder");
+            if (k && pack[k] !== undefined) el.setAttribute("placeholder", pack[k]);
+          });
+
+          document.querySelectorAll(".lang-btn").forEach(function (btn) {
+            var l = btn.getAttribute("data-lang");
+            btn.setAttribute("aria-pressed", l === lang ? "true" : "false");
+          });
+
+          try {
+            localStorage.setItem(LANG_KEY, lang);
+          } catch (e) {}
+
+          try {
+            var u = new URL(window.location.href);
+            u.searchParams.set("lang", lang);
+            history.replaceState(null, "", u.pathname + u.search + u.hash);
+          } catch (e) {}
+        }
+
+        document.querySelectorAll(".lang-btn").forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            applyLocale(btn.getAttribute("data-lang"));
+          });
+        });
+
+        applyLocale(getInitialLang());
 
         var form = document.getElementById("signup-form");
         var emailInput = document.getElementById("email");
@@ -237,7 +539,9 @@
         var formBlock = document.getElementById("form-block");
         var successBlock = document.getElementById("success-block");
 
-        if (!form || !emailInput || !feedback || !submitBtn) return;
+        function currentPack() {
+          return T[normalizeLang(document.documentElement.lang)] || T.en;
+        }
 
         function showSuccess() {
           if (formBlock) formBlock.classList.add("hidden");
@@ -247,7 +551,13 @@
           }
         }
 
-        if (new URLSearchParams(window.location.search).get("thanks") === "1") {
+        if (
+          form &&
+          emailInput &&
+          feedback &&
+          submitBtn &&
+          new URLSearchParams(window.location.search).get("thanks") === "1"
+        ) {
           showSuccess();
         }
 
@@ -256,70 +566,73 @@
           submitBtn.classList.toggle("is-loading", loading);
         }
 
-        form.addEventListener("submit", function (e) {
-          e.preventDefault();
-          feedback.textContent = "";
-          feedback.classList.remove("is-error");
-          var email = emailInput.value.trim();
-          if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-            feedback.textContent = "Please enter a valid work email.";
-            feedback.classList.add("is-error");
-            return;
-          }
+        if (form && emailInput && feedback && submitBtn) {
+          form.addEventListener("submit", function (e) {
+            e.preventDefault();
+            var pack = currentPack();
+            feedback.textContent = "";
+            feedback.classList.remove("is-error");
+            var email = emailInput.value.trim();
+            if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+              feedback.textContent = pack.err_email;
+              feedback.classList.add("is-error");
+              return;
+            }
 
-          if (FORMSPREE_ENDPOINT) {
-            setLoading(true);
-            var fd = new FormData();
-            fd.append("email", email);
-            var company = companyInput ? companyInput.value.trim() : "";
-            if (company) fd.append("company", company);
-            fd.append("_subject", "VoiceLog — early access request");
-            fetch(FORMSPREE_ENDPOINT, {
-              method: "POST",
-              body: fd,
-              headers: { Accept: "application/json" },
-            })
-              .then(function (res) {
-                setLoading(false);
-                if (res.ok) {
-                  showSuccess();
-                  form.reset();
-                  try {
-                    history.replaceState(
-                      null,
-                      "",
-                      window.location.pathname + "?thanks=1"
-                    );
-                  } catch (err) {}
-                } else {
-                  feedback.textContent =
-                    "Something went wrong. Try again or email us directly.";
-                  feedback.classList.add("is-error");
-                }
+            if (FORMSPREE_ENDPOINT) {
+              setLoading(true);
+              var fd = new FormData();
+              fd.append("email", email);
+              var company = companyInput ? companyInput.value.trim() : "";
+              if (company) fd.append("company", company);
+              fd.append("_subject", pack.form_subject);
+              fetch(FORMSPREE_ENDPOINT, {
+                method: "POST",
+                body: fd,
+                headers: { Accept: "application/json" },
               })
-              .catch(function () {
-                setLoading(false);
-                feedback.textContent =
-                  "Network error. Try again or email us directly.";
-                feedback.classList.add("is-error");
-              });
-            return;
-          }
+                .then(function (res) {
+                  setLoading(false);
+                  if (res.ok) {
+                    try {
+                      var u = new URL(window.location.href);
+                      u.searchParams.set("thanks", "1");
+                      history.replaceState(
+                        null,
+                        "",
+                        u.pathname + u.search + u.hash
+                      );
+                    } catch (err) {}
+                    showSuccess();
+                    form.reset();
+                  } else {
+                    feedback.textContent = pack.err_submit;
+                    feedback.classList.add("is-error");
+                  }
+                })
+                .catch(function () {
+                  setLoading(false);
+                  feedback.textContent = pack.err_network;
+                  feedback.classList.add("is-error");
+                });
+              return;
+            }
 
-          var subject = encodeURIComponent("VoiceLog — early access");
-          var body = encodeURIComponent(
-            "Please add me to the VoiceLog early access list.\n\nEmail: " +
-              email +
-              (company
-                ? "\nCompany: " + company
-                : "") +
-              "\n\nRole (rep / manager / RevOps / other): \nCRM (HubSpot / Pipedrive / other): "
-          );
-          window.location.href =
-            "mailto:" + CONTACT_EMAIL + "?subject=" + subject + "&body=" + body;
-          feedback.textContent =
-            "Opening your email app… Send the message to complete your request.";
-        });
+            var subject = encodeURIComponent(pack.form_subject);
+            var body = encodeURIComponent(
+              pack.form_body_intro +
+                "\n\nEmail: " +
+                email +
+                (companyInput && companyInput.value.trim()
+                  ? "\nCompany: " + companyInput.value.trim()
+                  : "") +
+                "\n\nRole: \nCRM: "
+            );
+            window.location.href =
+              "mailto:" + CONTACT_EMAIL + "?subject=" + subject + "&body=" + body;
+            feedback.textContent = pack.mailto_pending;
+          });
+        }
       })();
     </script>
   </body>
