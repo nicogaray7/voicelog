@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════
-   VoiceLog — best-in-class light landing page
+   VoiceLog - best-in-class light landing page
    Mobile-first · Scroll reveals · Glassmorphism cards
    ═══════════════════════════════════════════════ */
 
@@ -356,7 +356,7 @@ h1 {
 .problem-answer strong { color: var(--text); font-weight: 700; }
 
 /* ══════════════════════════════════════
-   HOW IT WORKS — vertical timeline
+   HOW IT WORKS - vertical timeline
    ══════════════════════════════════════ */
 .how-section { margin-bottom: var(--space-section); }
 
@@ -449,7 +449,7 @@ h1 {
 }
 
 /* ══════════════════════════════════════
-   FORM PANEL — primary conversion
+   FORM PANEL - primary conversion
    ══════════════════════════════════════ */
 .panel {
   position: relative;
@@ -691,7 +691,7 @@ h1 {
 .footer-note { font-size: 0.78rem; color: var(--muted); line-height: 1.5; }
 
 /* ══════════════════════════════════════
-   RESPONSIVE — desktop polish
+   RESPONSIVE - desktop polish
    ══════════════════════════════════════ */
 @media (min-width: 760px) {
   .hero { padding-top: clamp(3.5rem, 8vw, 5rem); }
