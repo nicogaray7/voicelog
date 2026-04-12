@@ -85,6 +85,7 @@
     <main>
       <!-- ── HERO ── -->
       <section class="hero" data-track-section="hero">
+        <div class="hero-gradient" aria-hidden="true"></div>
         <p class="eyebrow" data-i18n="eyebrow">Early access · Field sales</p>
         <h1 data-i18n="h1">Close deals.<br>Just talk.</h1>
         <p class="lede" data-i18n-html="lede">One tap after each meeting: VoiceLog turns your voice into a structured note and syncs it to <strong>HubSpot</strong> or <strong>Pipedrive</strong> — even offline.</p>
@@ -125,14 +126,14 @@
       </section>
 
       <!-- ── PROBLEM ── -->
-      <section class="problem-section" aria-labelledby="problem-heading" data-track-section="problem">
+      <section class="problem-section" aria-labelledby="problem-heading" data-track-section="problem" data-reveal>
         <h2 id="problem-heading" data-i18n="problem_title">Field reps are drowning in data entry.</h2>
         <p class="problem-lede" data-i18n-html="problem_body">After every meeting, reps spend <strong>20–40 minutes</strong> typing into the CRM. Notes get forgotten. Follow-ups slip. Revenue leaks.</p>
         <p class="problem-answer" data-i18n-html="problem_answer">With VoiceLog, you just <strong>speak</strong> — we handle the rest.</p>
       </section>
 
       <!-- ── HOW IT WORKS ── -->
-      <section class="how-section" aria-labelledby="how-heading" data-track-section="how_it_works">
+      <section class="how-section" aria-labelledby="how-heading" data-track-section="how_it_works" data-reveal>
         <p class="section-eyebrow" data-i18n="how_eyebrow">How it works</p>
         <h2 id="how-heading" data-i18n="how_title">Three steps to a clean CRM.</h2>
         <ol class="steps" role="list">
@@ -161,7 +162,7 @@
       </section>
 
       <!-- ── FEATURES ── -->
-      <section class="features-section" aria-labelledby="features-heading" data-track-section="features">
+      <section class="features-section" aria-labelledby="features-heading" data-track-section="features" data-reveal>
         <p class="section-eyebrow" data-i18n="feat_eyebrow">Features</p>
         <h2 id="features-heading" data-i18n="feat_title">Everything your team needs.</h2>
         <ul class="features-grid" role="list">
@@ -199,7 +200,7 @@
       </section>
 
       <!-- ── EARLY ACCESS FORM ── -->
-      <section class="panel" id="access" aria-labelledby="interest-heading" data-track-section="form">
+      <section class="panel" id="access" aria-labelledby="interest-heading" data-track-section="form" data-reveal>
         <div id="form-block">
           <h2 id="interest-heading" data-i18n="form_title">Request early access</h2>
           <p class="panel-copy" data-i18n-html="form_copy">Leave your work email. We'll send a <strong>confirmation</strong> and follow up when the next cohort opens — no spam.</p>
@@ -229,7 +230,7 @@
       </section>
 
       <!-- ── PRICING ── -->
-      <section class="pricing-teaser" aria-labelledby="pricing-heading" data-track-section="pricing">
+      <section class="pricing-teaser" aria-labelledby="pricing-heading" data-track-section="pricing" data-reveal>
         <p class="section-eyebrow" data-i18n="pricing_eyebrow">Pricing</p>
         <h2 id="pricing-heading" data-i18n="pricing_title">Simple, transparent pricing (USD).</h2>
         <div class="price-cards">
@@ -254,7 +255,7 @@
       </section>
 
       <!-- ── FAQ ── -->
-      <section class="faq-section" aria-labelledby="faq-heading" data-track-section="faq">
+      <section class="faq-section" aria-labelledby="faq-heading" data-track-section="faq" data-reveal>
         <p class="section-eyebrow" data-i18n="faq_eyebrow">FAQ</p>
         <h2 id="faq-heading" data-i18n="faq_title">Common questions.</h2>
         <dl class="faq-list">
@@ -275,6 +276,14 @@
             <dd class="faq-a" data-i18n="faq4_a">Audio is recorded only with your explicit in-app consent and processed to produce the structured note. We follow a zero data retention approach for AI calls and encrypt CRM tokens at rest.</dd>
           </div>
         </dl>
+      </section>
+
+      <!-- ── FINAL CTA ── -->
+      <section class="final-cta" data-reveal>
+        <h2 data-i18n="final_cta_title">Ready to reclaim your selling time?</h2>
+        <p class="final-cta-sub" data-i18n="final_cta_sub">Join the early access list. Be among the first field teams to drop the typing tax.</p>
+        <a class="btn btn-hero" href="#access" data-i18n="hero_cta" data-track-cta="final">Request early access</a>
+        <p class="final-cta-hint" data-i18n="final_cta_hint">No credit card required · Cancel anytime</p>
       </section>
 
       <!-- ── PRIVACY ── -->
@@ -340,6 +349,7 @@
           faq2_q:"Which CRMs do you support?",faq2_a:"HubSpot is priority #1, Pipedrive is priority #2. Salesforce and Zoho are on the roadmap for a future release.",
           faq3_q:"Does it work without internet?",faq3_a:"Yes. VoiceLog stores recordings and notes locally first, then syncs automatically when connectivity is restored — no data is lost in dead zones.",
           faq4_q:"How is my audio data handled?",faq4_a:"Audio is recorded only with your explicit in-app consent and processed to produce the structured note. We follow a zero data retention approach for AI calls and encrypt CRM tokens at rest.",
+          final_cta_title:"Ready to reclaim your selling time?",final_cta_sub:"Join the early access list. Be among the first field teams to drop the typing tax.",final_cta_hint:"No credit card required · Cancel anytime",
           privacy_title:"Privacy",privacy_p:"We use your email only for VoiceLog and early access updates. Audio in-app requires explicit consent; we never listen live. GDPR requests: use the contact you configure on this site.",
           footer_tag:"voice → CRM notes.",footer_note:"In development. Transcription via Whisper / Groq. CRM tokens encrypted at rest.",
           err_email:"Please enter a valid work email.",err_submit:"Something went wrong. Try again.",err_network:"Network error. Try again.",
@@ -391,6 +401,7 @@
           faq2_q:"¿Qué CRMs soportáis?",faq2_a:"HubSpot es prioridad #1, Pipedrive #2. Salesforce y Zoho están en la hoja de ruta.",
           faq3_q:"¿Funciona sin internet?",faq3_a:"Sí. VoiceLog almacena grabaciones y notas localmente primero, luego sincroniza al restaurarse la conexión. No se pierden datos en zonas sin cobertura.",
           faq4_q:"¿Cómo se gestionan mis datos de audio?",faq4_a:"El audio solo se graba con tu consentimiento explícito en la app. Aplicamos retención cero de datos para llamadas de IA y ciframos los tokens CRM en reposo.",
+          final_cta_title:"¿Listo para recuperar tu tiempo de venta?",final_cta_sub:"Únete a la lista de acceso anticipado. Sé de los primeros en eliminar el impuesto del teclado.",final_cta_hint:"Sin tarjeta de crédito · Cancela cuando quieras",
           privacy_title:"Privacidad",privacy_p:"Usamos tu email solo para VoiceLog y actualizaciones de acceso anticipado. El audio requiere consentimiento explícito; nunca escuchamos en vivo. RGPD: contacto configurado en este sitio.",
           footer_tag:"voz → notas CRM.",footer_note:"En desarrollo. Transcripción via Whisper / Groq. Tokens CRM cifrados en reposo.",
           err_email:"Introduce un email laboral válido.",err_submit:"Error. Inténtalo de nuevo.",err_network:"Error de red. Inténtalo de nuevo.",
@@ -442,6 +453,7 @@
           faq2_q:"Quels CRM prenez-vous en charge ?",faq2_a:"HubSpot est la priorité n°1, Pipedrive la n°2. Salesforce et Zoho sont en feuille de route.",
           faq3_q:"Fonctionne-t-il sans internet ?",faq3_a:"Oui. VoiceLog stocke enregistrements et notes localement d'abord, puis synchronise dès le retour de la connexion — aucune donnée perdue en zone blanche.",
           faq4_q:"Comment mes données audio sont-elles traitées ?",faq4_a:"L'audio n'est enregistré qu'avec votre consentement explicite dans l'app. Nous appliquons une rétention zéro pour les appels IA et chiffrons les jetons CRM au repos.",
+          final_cta_title:"Prêt à retrouver votre temps de vente ?",final_cta_sub:"Rejoignez la liste d'accès anticipé. Soyez parmi les premières équipes terrain à supprimer la taxe du clavier.",final_cta_hint:"Sans carte de crédit · Annulez quand vous voulez",
           privacy_title:"Confidentialité",privacy_p:"Nous utilisons votre email uniquement pour VoiceLog et les mises à jour d'accès anticipé. L'audio nécessite un consentement explicite ; nous n'écoutons jamais en direct. RGPD : contact configuré sur ce site.",
           footer_tag:"voix → notes CRM.",footer_note:"En développement. Transcription via Whisper / Groq. Jetons CRM chiffrés au repos.",
           err_email:"Indiquez un email professionnel valide.",err_submit:"Une erreur s'est produite. Réessayez.",err_network:"Erreur réseau. Réessayez.",
@@ -493,6 +505,16 @@
         document.querySelectorAll("[data-track-section]").forEach(function(el) {
           sectionObserver.observe(el);
         });
+      }
+
+      /* ─────────── scroll reveal animation ─────────── */
+      if ("IntersectionObserver" in window) {
+        var revealObs = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) { entry.target.classList.add("is-visible"); revealObs.unobserve(entry.target); }
+          });
+        }, { threshold: 0.08, rootMargin: "0px 0px -40px 0px" });
+        document.querySelectorAll("[data-reveal]").forEach(function(el) { revealObs.observe(el); });
       }
 
       /* ─────────── scroll depth ─────────── */
