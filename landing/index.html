@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta id="meta-desc" name="description"
       content="VoiceLog: voice-to-CRM for field sales. One tap after the meeting syncs to HubSpot or Pipedrive, even offline. Request early access." />
-    <title id="doc-title">VoiceLog: Close deals. Just talk.</title>
+    <title id="doc-title">VoiceLog: Visit notes and your CRM, updated with voice and AI.</title>
     <link rel="canonical" href="https://voicelog-one.vercel.app/" />
     <link rel="alternate" hreflang="en" href="https://voicelog-one.vercel.app/?lang=en" />
     <link rel="alternate" hreflang="es" href="https://voicelog-one.vercel.app/?lang=es" />
@@ -13,11 +13,11 @@
     <link rel="alternate" hreflang="x-default" href="https://voicelog-one.vercel.app/" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://voicelog-one.vercel.app/" />
-    <meta property="og:title" content="VoiceLog: Close deals. Just talk." />
+    <meta property="og:title" content="VoiceLog: Visit notes and your CRM, updated with voice and AI." />
     <meta property="og:description" content="One tap after each meeting. VoiceLog syncs structured notes to HubSpot or Pipedrive, even offline." />
     <meta property="og:locale" content="en_US" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="VoiceLog: Close deals. Just talk." />
+    <meta name="twitter:title" content="VoiceLog: Visit notes and your CRM, updated with voice and AI." />
     <meta name="twitter:description" content="Voice-to-CRM for field sales reps. Works offline. Early access open." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -74,7 +74,7 @@
         <button type="button" class="lang-btn" data-lang="es" aria-pressed="false">ES</button>
         <button type="button" class="lang-btn" data-lang="fr" aria-pressed="false">FR</button>
       </div>
-      <a class="nav-cta" href="#access" data-i18n="nav_cta" data-track-cta="nav">Get early access</a>
+      <a class="nav-cta nav-cta-accent" href="#access" data-i18n="nav_cta" data-track-cta="nav">Get early access</a>
     </header>
 
     <!-- ── STICKY BOTTOM CTA (mobile) ── -->
@@ -87,9 +87,18 @@
       <section class="hero" data-track-section="hero">
         <div class="hero-gradient" aria-hidden="true"></div>
         <p class="eyebrow" data-i18n="eyebrow">Early access · Field sales</p>
-        <h1 data-i18n="h1">Close deals.<br>Just talk.</h1>
+        <h1 class="hero-headline" data-i18n="h1">Visit notes and your CRM,<br>updated with voice and AI.</h1>
         <p class="lede" data-i18n-html="lede">One tap after each meeting: VoiceLog turns your voice into a structured note and syncs it to <strong>HubSpot</strong> or <strong>Pipedrive</strong>, even offline.</p>
         <a class="btn btn-primary btn-hero" href="#access" data-i18n="hero_cta" data-track-cta="hero">Request early access</a>
+
+        <div class="trust-marquee" data-track-section="trust" data-reveal>
+          <p class="trust-marquee-label" data-i18n="trust_label">Plugs into the CRM stack you use today</p>
+          <div class="trust-logos" role="list">
+            <span class="trust-logo" role="listitem" data-i18n="logo_hs">HubSpot</span>
+            <span class="trust-logo" role="listitem" data-i18n="logo_pd">Pipedrive</span>
+            <span class="trust-logo trust-logo-soon" role="listitem" data-i18n="logo_sf">Salesforce (roadmap)</span>
+          </div>
+        </div>
 
         <!-- Phone mockup -->
         <div class="mockup" aria-hidden="true">
@@ -134,7 +143,7 @@
 
       <!-- ── HOW IT WORKS ── -->
       <section class="how-section" aria-labelledby="how-heading" data-track-section="how_it_works" data-reveal>
-        <p class="section-eyebrow" data-i18n="how_eyebrow">How it works</p>
+        <p class="section-eyebrow pillar-tag" data-i18n="how_eyebrow">From voice to CRM</p>
         <h2 id="how-heading" data-i18n="how_title">Three steps to a clean CRM.</h2>
         <ol class="steps" role="list">
           <li class="step">
@@ -163,7 +172,7 @@
 
       <!-- ── FEATURES ── -->
       <section class="features-section" aria-labelledby="features-heading" data-track-section="features" data-reveal>
-        <p class="section-eyebrow" data-i18n="feat_eyebrow">Features</p>
+        <p class="section-eyebrow pillar-tag" data-i18n="feat_eyebrow">Built for reps on the road</p>
         <h2 id="features-heading" data-i18n="feat_title">Everything your team needs.</h2>
         <ul class="features-grid" role="list">
           <li class="feature-card">
@@ -199,6 +208,18 @@
         </ul>
       </section>
 
+      <!-- ── INTEGRATIONS (Aircall-style band) ── -->
+      <section class="integrations-band" data-track-section="integrations" data-reveal aria-labelledby="integ-heading">
+        <p class="pillar-tag" data-i18n="integ_pillar">Integrations</p>
+        <h2 id="integ-heading" data-i18n="integ_title">Connect every note to the tools you already use.</h2>
+        <p class="integ-sub" data-i18n="integ_sub">Native style sync for HubSpot and Pipedrive first. Salesforce and more CRMs on the roadmap.</p>
+        <div class="trust-logos trust-logos-lg" role="list">
+          <span class="trust-logo trust-logo-solid" role="listitem" data-i18n="logo_hs">HubSpot</span>
+          <span class="trust-logo trust-logo-solid" role="listitem" data-i18n="logo_pd">Pipedrive</span>
+          <span class="trust-logo trust-logo-soon" role="listitem" data-i18n="logo_sf">Salesforce (roadmap)</span>
+        </div>
+      </section>
+
       <!-- ── EARLY ACCESS FORM ── -->
       <section class="panel" id="access" aria-labelledby="interest-heading" data-track-section="form" data-reveal>
         <div id="form-block">
@@ -231,7 +252,7 @@
 
       <!-- ── PRICING ── -->
       <section class="pricing-teaser" aria-labelledby="pricing-heading" data-track-section="pricing" data-reveal>
-        <p class="section-eyebrow" data-i18n="pricing_eyebrow">Pricing</p>
+        <p class="section-eyebrow pillar-tag" data-i18n="pricing_eyebrow">Plans and pricing</p>
         <h2 id="pricing-heading" data-i18n="pricing_title">Simple, transparent pricing (USD).</h2>
         <div class="price-cards">
           <article class="price-card">
@@ -256,7 +277,7 @@
 
       <!-- ── FAQ ── -->
       <section class="faq-section" aria-labelledby="faq-heading" data-track-section="faq" data-reveal>
-        <p class="section-eyebrow" data-i18n="faq_eyebrow">FAQ</p>
+        <p class="section-eyebrow pillar-tag" data-i18n="faq_eyebrow">Your questions</p>
         <h2 id="faq-heading" data-i18n="faq_title">Common questions.</h2>
         <dl class="faq-list">
           <div class="faq-item">
@@ -278,6 +299,13 @@
         </dl>
       </section>
 
+      <!-- ── QUOTE (social proof tone, no fake persona) ── -->
+      <section class="quote-band" data-reveal aria-labelledby="quote-heading">
+        <h2 id="quote-heading" class="sr-only" data-i18n="quote_sr">Why teams want this</h2>
+        <blockquote class="quote-block" data-i18n="quote_text">Less time tapping in the CRM after a visit means more time on pipeline and relationships.</blockquote>
+        <p class="quote-source" data-i18n="quote_source">Built for B2B field sales</p>
+      </section>
+
       <!-- ── FINAL CTA ── -->
       <section class="final-cta" data-reveal>
         <h2 data-i18n="final_cta_title">Ready to reclaim your selling time?</h2>
@@ -291,6 +319,12 @@
         <h2 id="privacy-heading" data-i18n="privacy_title">Privacy</h2>
         <p data-i18n="privacy_p">We use your email only for VoiceLog and early access updates. Audio in-app requires explicit consent; we never listen live. GDPR requests: use the contact you configure on this site.</p>
       </section>
+
+      <div class="compliance-strip" data-reveal role="list" aria-label="Trust">
+        <span class="compliance-pill" role="listitem" data-i18n="badge_gdpr">GDPR minded</span>
+        <span class="compliance-pill" role="listitem" data-i18n="badge_encrypt">CRM tokens encrypted at rest</span>
+        <span class="compliance-pill" role="listitem" data-i18n="badge_consent">Explicit consent for audio</span>
+      </div>
     </main>
 
     <footer class="footer">
@@ -305,12 +339,17 @@
       /* ─────────── i18n data ─────────── */
       var T = {
         en: {
-          meta_title:"VoiceLog: Close deals. Just talk.",
+          meta_title:"VoiceLog: Visit notes and your CRM, updated with voice and AI.",
           meta_desc:"Voice-to-CRM for field sales. One tap after the meeting syncs to HubSpot or Pipedrive, even offline.",
           skip_link:"Skip to form",nav_cta:"Get early access",
           eyebrow:"Early access · Field sales",
-          h1:"Close deals.\nJust talk.",
+          h1:"Visit notes and your CRM,\nupdated with voice and AI.",
           lede:"One tap after each meeting: VoiceLog turns your voice into a structured note and syncs it to <strong>HubSpot</strong> or <strong>Pipedrive</strong>, even offline.",
+          trust_label:"Plugs into the CRM stack you use today",
+          logo_hs:"HubSpot",logo_pd:"Pipedrive",logo_sf:"Salesforce (roadmap)",
+          integ_pillar:"Integrations",integ_title:"Connect every note to the tools you already use.",integ_sub:"Native style sync for HubSpot and Pipedrive first. Salesforce and more CRMs on the roadmap.",
+          quote_sr:"Why teams want this",quote_text:"Less time tapping in the CRM after a visit means more time on pipeline and relationships.",quote_source:"Built for B2B field sales",
+          badge_gdpr:"GDPR minded",badge_encrypt:"CRM tokens encrypted at rest",badge_consent:"Explicit consent for audio",
           hero_cta:"Request early access",
           mockup_status:"Recording…",chip_hubspot:"HubSpot ✓",chip_offline:"Offline ✓",
           stat1_val:"30 min",stat1_label:"saved / rep / day",
@@ -319,11 +358,11 @@
           problem_title:"Field reps are drowning in data entry.",
           problem_body:"After every meeting, reps spend <strong>20 to 40 minutes</strong> typing into the CRM. Notes get forgotten. Follow-ups slip. Revenue leaks.",
           problem_answer:"With VoiceLog, you just <strong>speak</strong>, and we handle the rest.",
-          how_eyebrow:"How it works",how_title:"Three steps to a clean CRM.",
+          how_eyebrow:"From voice to CRM",how_title:"Three steps to a clean CRM.",
           step1_title:"Record a voice note",step1_body:"Finish the meeting. Open VoiceLog and tap once. Describe the conversation, key details, and next steps, naturally.",
           step2_title:"AI transcribes & structures",step2_body:"The AI extracts contacts, deal details, follow-up actions, structured and ready, in the background while you drive.",
           step3_title:"CRM updated automatically",step3_body:"Notes push straight into HubSpot or Pipedrive. No copy-paste. No forgotten follow-ups. Clean data, every time.",
-          feat_eyebrow:"Features",feat_title:"Everything your team needs.",
+          feat_eyebrow:"Built for reps on the road",feat_title:"Everything your team needs.",
           feat1_title:"1-tap recording",feat1_body:"Capture visit notes the moment the meeting ends, while context is fresh.",
           feat2_title:"AI transcription",feat2_body:"High-accuracy transcription via Whisper. Supports accents, jargon, noisy environments.",
           feat3_title:"Offline-first queue",feat3_body:"No signal? No problem. Notes queue locally and sync the moment you reconnect.",
@@ -338,13 +377,13 @@
           success_title:"You're on the list",
           success_copy:"<strong>Check your inbox</strong> for a confirmation. We'll reach out after launch with next steps.",
           success_muted:"Nothing there? Check spam, or write us from the same address.",
-          pricing_eyebrow:"Pricing",pricing_title:"Simple, transparent pricing (USD).",
+          pricing_eyebrow:"Plans and pricing",pricing_title:"Simple, transparent pricing (USD).",
           popular_badge:"Most popular",
           tier_starter:"Starter",price_starter:'$29<span>/seat/mo</span>',detail_starter:"1 to 10 seats · 50 reports/mo",
           tier_growth:"Growth",price_growth:'$49<span>/seat/mo</span>',detail_growth:"11 to 50 seats · unlimited · briefing",
           tier_scale:"Scale",price_scale:"Custom",detail_scale:"50+ · SSO · Salesforce",
           annual:"~20% off on annual billing (planned).",
-          faq_eyebrow:"FAQ",faq_title:"Common questions.",
+          faq_eyebrow:"Your questions",faq_title:"Common questions.",
           faq1_q:"When will VoiceLog launch?",faq1_a:"We are onboarding design partners now and targeting a closed beta in the coming months. Early access members get priority and influence the roadmap.",
           faq2_q:"Which CRMs do you support?",faq2_a:"HubSpot is priority #1, Pipedrive is priority #2. Salesforce and Zoho are on the roadmap for a future release.",
           faq3_q:"Does it work without internet?",faq3_a:"Yes. VoiceLog stores recordings and notes locally first, then syncs automatically when connectivity is restored; no data is lost in dead zones.",
@@ -357,12 +396,17 @@
           form_subject:"VoiceLog: early access",form_body_intro:"Please add me to the VoiceLog early access list."
         },
         es: {
-          meta_title:"VoiceLog: Cierra más tratos. Solo habla.",
+          meta_title:"VoiceLog: Notas de visita y tu CRM, con voz e IA.",
           meta_desc:"Voz al CRM para comerciales. Un toque tras la reunión sincroniza con HubSpot o Pipedrive, incluso sin conexión.",
           skip_link:"Ir al formulario",nav_cta:"Solicitar acceso",
           eyebrow:"Acceso anticipado · Ventas de campo",
-          h1:"Cierra tratos.\nSolo habla.",
+          h1:"Notas de visita y tu CRM,\nactualizadas con voz e IA.",
           lede:"Un toque tras cada visita: VoiceLog convierte tu voz en una nota estructurada y sincroniza con <strong>HubSpot</strong> o <strong>Pipedrive</strong>, incluso sin conexión.",
+          trust_label:"Encaja en el stack CRM que ya usas",
+          logo_hs:"HubSpot",logo_pd:"Pipedrive",logo_sf:"Salesforce (hoja de ruta)",
+          integ_pillar:"Integraciones",integ_title:"Conecta cada nota a las herramientas que ya usas.",integ_sub:"Sincronización tipo nativo con HubSpot y Pipedrive primero. Salesforce y más CRM en la hoja de ruta.",
+          quote_sr:"Por qué lo piden los equipos",quote_text:"Menos tiempo escribiendo en el CRM tras una visita es más tiempo para el pipeline y las relaciones.",quote_source:"Pensado para ventas B2B de campo",
+          badge_gdpr:"Enfoque RGPD",badge_encrypt:"Tokens CRM cifrados en reposo",badge_consent:"Consentimiento explícito para el audio",
           hero_cta:"Solicitar acceso anticipado",
           mockup_status:"Grabando…",chip_hubspot:"HubSpot ✓",chip_offline:"Sin red ✓",
           stat1_val:"30 min",stat1_label:"ahorrados / vendedor / día",
@@ -371,11 +415,11 @@
           problem_title:"Los comerciales se ahogan en introducción de datos.",
           problem_body:"Tras cada reunión, los vendedores gastan <strong>20 a 40 minutos</strong> escribiendo en el CRM. Las notas se olvidan, los seguimientos se pierden, los ingresos se escapan.",
           problem_answer:"Con VoiceLog solo <strong>hablas</strong>, y nosotros hacemos el resto.",
-          how_eyebrow:"Cómo funciona",how_title:"Tres pasos para un CRM limpio.",
+          how_eyebrow:"De la voz al CRM",how_title:"Tres pasos para un CRM limpio.",
           step1_title:"Graba una nota de voz",step1_body:"Termina la reunión. Abre VoiceLog y toca una vez. Describe la conversación, detalles clave y próximos pasos, con naturalidad.",
           step2_title:"IA transcribe y estructura",step2_body:"La IA extrae contactos, detalles del trato y acciones de seguimiento, estructurado y listo, en segundo plano mientras conduces.",
           step3_title:"CRM actualizado automáticamente",step3_body:"Las notas van directamente a HubSpot o Pipedrive. Sin copiar y pegar. Sin seguimientos olvidados. Datos limpios siempre.",
-          feat_eyebrow:"Características",feat_title:"Todo lo que tu equipo necesita.",
+          feat_eyebrow:"Pensado para comerciales en ruta",feat_title:"Todo lo que tu equipo necesita.",
           feat1_title:"Grabación en 1 toque",feat1_body:"Captura las notas justo al salir de la reunión, cuando el contexto está fresco.",
           feat2_title:"Transcripción IA",feat2_body:"Alta precisión con Whisper. Soporta acentos, jerga técnica y entornos ruidosos.",
           feat3_title:"Cola sin conexión",feat3_body:"¿Sin señal? Sin problema. Las notas se guardan localmente y sincronizan al reconectarse.",
@@ -390,13 +434,13 @@
           success_title:"Estás en la lista",
           success_copy:"<strong>Revisa tu bandeja</strong> para la confirmación. Te escribiremos tras el lanzamiento con los siguientes pasos.",
           success_muted:"¿No llega? Revisa spam o escríbenos desde el mismo email.",
-          pricing_eyebrow:"Precios",pricing_title:"Precios simples y transparentes (USD).",
+          pricing_eyebrow:"Planes y precios",pricing_title:"Precios simples y transparentes (USD).",
           popular_badge:"Más popular",
           tier_starter:"Inicial",price_starter:'$29<span>/usuario/mes</span>',detail_starter:"1 a 10 usuarios · 50 informes/mes",
           tier_growth:"Crecimiento",price_growth:'$49<span>/usuario/mes</span>',detail_growth:"11 a 50 · ilimitado · briefing",
           tier_scale:"Escala",price_scale:"A medida",detail_scale:"50+ · SSO · Salesforce",
           annual:"~20% de descuento en facturación anual (previsto).",
-          faq_eyebrow:"Preguntas frecuentes",faq_title:"Dudas comunes.",
+          faq_eyebrow:"Tus dudas",faq_title:"Dudas comunes.",
           faq1_q:"¿Cuándo lanza VoiceLog?",faq1_a:"Estamos incorporando socios de diseño ahora y apuntamos a una beta cerrada próximamente. Los miembros de acceso anticipado tienen prioridad.",
           faq2_q:"¿Qué CRMs soportáis?",faq2_a:"HubSpot es prioridad #1, Pipedrive #2. Salesforce y Zoho están en la hoja de ruta.",
           faq3_q:"¿Funciona sin internet?",faq3_a:"Sí. VoiceLog almacena grabaciones y notas localmente primero, luego sincroniza al restaurarse la conexión. No se pierden datos en zonas sin cobertura.",
@@ -409,12 +453,17 @@
           form_subject:"VoiceLog: acceso anticipado",form_body_intro:"Añádeme a la lista de acceso anticipado de VoiceLog."
         },
         fr: {
-          meta_title:"VoiceLog: Concluez plus. Parlez, c'est tout.",
+          meta_title:"VoiceLog: Comptes rendus et CRM, à jour grâce à la voix et l'IA.",
           meta_desc:"Voix vers CRM pour commerciaux terrain. Un geste après le rendez-vous sync HubSpot ou Pipedrive, même hors ligne.",
           skip_link:"Aller au formulaire",nav_cta:"Demander l'accès",
           eyebrow:"Accès anticipé · Commercial terrain",
-          h1:"Concluez plus.\nParlez, c'est tout.",
+          h1:"Comptes rendus de visites et CRM,\nmis à jour par la voix et l'IA.",
           lede:"Un geste après chaque rendez-vous : VoiceLog transforme votre voix en note structurée et synchronise <strong>HubSpot</strong> ou <strong>Pipedrive</strong>, même hors ligne.",
+          trust_label:"S'intègre à la stack CRM que vous utilisez déjà",
+          logo_hs:"HubSpot",logo_pd:"Pipedrive",logo_sf:"Salesforce (feuille de route)",
+          integ_pillar:"Intégrations",integ_title:"Reliez chaque note aux outils que vous utilisez déjà.",integ_sub:"Sync de type natif pour HubSpot et Pipedrive en premier. Salesforce et d'autres CRM sur la feuille de route.",
+          quote_sr:"Pourquoi les équipes y sont sensibles",quote_text:"Moins de temps passé dans le CRM après un rendez-vous, c'est plus de temps pour le pipe et la relation client.",quote_source:"Conçu pour la vente B2B terrain",
+          badge_gdpr:"Respect RGPD",badge_encrypt:"Jetons CRM chiffrés au repos",badge_consent:"Consentement explicite pour l'audio",
           hero_cta:"Demander un accès anticipé",
           mockup_status:"Enregistrement…",chip_hubspot:"HubSpot ✓",chip_offline:"Hors ligne ✓",
           stat1_val:"30 min",stat1_label:"gagnés / commercial / jour",
@@ -423,11 +472,11 @@
           problem_title:"Les commerciaux terrain se noient dans la saisie.",
           problem_body:"Après chaque rendez-vous, les commerciaux passent <strong>20 à 40 minutes</strong> à saisir dans le CRM. Les notes s'oublient, les relances glissent, le chiffre s'évapore.",
           problem_answer:"Avec VoiceLog, vous <strong>parlez</strong>, et on s'occupe du reste.",
-          how_eyebrow:"Comment ça marche",how_title:"Trois étapes vers un CRM propre.",
+          how_eyebrow:"De la voix au CRM",how_title:"Trois étapes vers un CRM propre.",
           step1_title:"Enregistrez une note vocale",step1_body:"Fin du rendez-vous. Ouvrez VoiceLog et appuyez une fois. Décrivez librement la conversation, les points clés, les prochaines étapes.",
           step2_title:"L'IA transcrit et structure",step2_body:"L'IA extrait contacts, détails du deal, actions de suivi, structurés et prêts, en arrière-plan pendant que vous roulez.",
           step3_title:"CRM mis à jour automatiquement",step3_body:"Les notes sont poussées directement dans HubSpot ou Pipedrive. Zéro copier-coller. Zéro relance oubliée. Des données propres, tout le temps.",
-          feat_eyebrow:"Fonctionnalités",feat_title:"Tout ce dont votre équipe a besoin.",
+          feat_eyebrow:"Pensé pour le terrain",feat_title:"Tout ce dont votre équipe a besoin.",
           feat1_title:"Enregistrement 1 geste",feat1_body:"Capturez les notes dès la fin du rendez-vous, tant que le contexte est frais.",
           feat2_title:"Transcription IA",feat2_body:"Haute précision avec Whisper. Supporte les accents, le jargon métier, les environnements bruyants.",
           feat3_title:"File hors ligne",feat3_body:"Pas de signal ? Pas de problème. Les notes se stockent localement et synchronisent au retour de la connexion.",
@@ -442,13 +491,13 @@
           success_title:"Vous êtes sur la liste",
           success_copy:"<strong>Vérifiez votre boîte mail</strong> pour la confirmation. Nous vous recontacterons après le lancement.",
           success_muted:"Rien reçu ? Vérifiez les indésirables ou écrivez-nous depuis la même adresse.",
-          pricing_eyebrow:"Tarifs",pricing_title:"Des tarifs simples et transparents (USD).",
+          pricing_eyebrow:"Offres et tarifs",pricing_title:"Des tarifs simples et transparents (USD).",
           popular_badge:"Le plus populaire",
           tier_starter:"Starter",price_starter:'29 $<span>/siège/mois</span>',detail_starter:"1 à 10 sièges · 50 rapports/mois",
           tier_growth:"Croissance",price_growth:'49 $<span>/siège/mois</span>',detail_growth:"11 à 50 · illimité · briefing",
           tier_scale:"Scale",price_scale:"Sur mesure",detail_scale:"50+ · SSO · Salesforce",
           annual:"~20 % de réduction en annuel (prévu).",
-          faq_eyebrow:"FAQ",faq_title:"Questions fréquentes.",
+          faq_eyebrow:"Vos questions",faq_title:"Questions fréquentes.",
           faq1_q:"Quand VoiceLog sera-t-il disponible ?",faq1_a:"Nous intégrons des partenaires de conception maintenant et visons une bêta fermée dans les prochains mois. Les membres en accès anticipé sont prioritaires.",
           faq2_q:"Quels CRM prenez-vous en charge ?",faq2_a:"HubSpot est la priorité n°1, Pipedrive la n°2. Salesforce et Zoho sont en feuille de route.",
           faq3_q:"Fonctionne-t-il sans internet ?",faq3_a:"Oui. VoiceLog stocke enregistrements et notes localement d'abord, puis synchronise dès le retour de la connexion; aucune donnée perdue en zone blanche.",
